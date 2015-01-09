@@ -9,6 +9,9 @@ platforms:
   - name: centos-6.5
 
 suites:
-  - name: default
+  - name: node1
+    run_list:
+      - recipe[graphstack]
+  - name: node2
     run_list:
       - recipe[graphstack]

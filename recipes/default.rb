@@ -6,3 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+
+node.default['statsd']['nodejs_bin'] = '/usr/bin/node'
+
+include_recipe 'statsd'
